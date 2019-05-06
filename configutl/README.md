@@ -1,7 +1,7 @@
 # ConfigUtl
 Задача - написать утилиту для работы с семейством конфигов, зависящих от окружения: хост, юзер, профиль  
 
-## Примерный --help 
+## Примерный --help
 ```
 Usage: configutl [--file FILENAME] [--host HOSTNAME] [--user USERNAME] [--profile PROFILE] [--getjson|--getstd]
 Example: configutl --user sergey --profile test_env --getstd "db.host db.port"
@@ -25,6 +25,7 @@ config.json - пример конфига, на котором работает 
 test.sh - тестовый bash скрипт, если твой бинарник `your_bin`, то запускать тест так: sh test.sh `your_bin`
 
 ## Тест - как всё должно сработать
+Запускаем, находясь в папке `configutl`  
 Передаём `test.sh` аргументы для запуска утилиты, например скрипт `mock.sh`
 ```
 $ sh test.sh sh mock.sh

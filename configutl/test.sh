@@ -1,5 +1,5 @@
 #!/bin/bash
-# It is BASH test script 
+# It is BASH test script
 
 configutl="$@"
 
