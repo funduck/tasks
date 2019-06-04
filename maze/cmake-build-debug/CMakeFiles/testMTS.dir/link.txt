@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testMTS.dir/main.cpp.o CMakeFiles/testMTS.dir/func.cpp.o  -o testMTS 

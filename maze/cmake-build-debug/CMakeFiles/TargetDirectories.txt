@@ -1,0 +1,3 @@
+/home/sancho/CLionProjects/testMTS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sancho/CLionProjects/testMTS/cmake-build-debug/CMakeFiles/testMTS.dir
+/home/sancho/CLionProjects/testMTS/cmake-build-debug/CMakeFiles/edit_cache.dir
