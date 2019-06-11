@@ -9,8 +9,8 @@ echo -n Simple maze " "
 echo "cat test/simple_maze.txt | $walk_out_of_maze > $tmp" | sh
 
 { \
-	diff $tmp test/solution_simple_maze.txt || \
-	diff $tmp test/solution2_simple_maze.txt
+	diff $tmp test/solution_simple_maze.txt > /dev/null || \
+	diff $tmp test/solution2_simple_maze.txt > /dev/null
 } && \
 echo -e "\033[32mOK\033[m" || \
 { \
