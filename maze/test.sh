@@ -9,8 +9,8 @@ echo -n Simple maze " "
 echo "cat test/simple_maze.txt | $walk_out_of_maze > $tmp" | sh
 
 { \
-	diff $tmp test/solution_simple_maze.txt > /dev/null || \
-	diff $tmp test/solution2_simple_maze.txt > /dev/null
+	diff -Z $tmp test/solution_simple_maze.txt > /dev/null || \
+	diff -Z $tmp test/solution2_simple_maze.txt > /dev/null
 } && \
 echo -e "\033[32mOK\033[m" || \
 { \
@@ -23,7 +23,7 @@ echo -e "\033[32mOK\033[m" || \
 echo -n Maze with sand " "
 echo "cat test/maze_with_sand.txt | $walk_out_of_maze > $tmp" | sh
 
-diff $tmp test/solution_maze_with_sand.txt && \
+diff -Z $tmp test/solution_maze_with_sand.txt && \
 echo -e "\033[32mOK\033[m" || \
 { \
 	echo failed, wrong way
